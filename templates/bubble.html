@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Chart</title>
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+
+    <!-- Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+</head>
+
+<body>
+    
+  <h1>Plotly: Visualizations</h1>
+    <br>
+    <nav>
+        <ul>
+          <li><a href="http://127.0.0.1:5000/">Home</a></li>
+        </ul>
+      </nav>
+
+    <!-- div that holds chart -->
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-6">
+                <div id="bubble_chart"></div>
+            </div>
+            <br>
+            <div class = "col-md-6">
+                <div id="scatter_plot"></div>
+            </div>
+        </div>
+    
+    <!-- div that holds the bubble chart -->
+    <div id="bubble_chart"></div>
+
+    <!-- div that holds the scatter plot -->
+    <div id="scatter_plot"></div>
+  
+    <!-- D3 JavaScript -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+  
+    <!-- API key -->
+    <script type="text/javascript" src="config.py"></script>
+    
+    <!-- Bubble JavaScript -->
+    <script type="text/javascript" src="static/bubble.js"></script>
+
+    <!-- Scatter JavaScript -->
+    <script type="text/javascript" src="static/scatter.js"></script>
+
+
+
+</body>
+</html>
+
+   

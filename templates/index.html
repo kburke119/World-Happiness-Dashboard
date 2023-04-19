@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happiness of People</title>
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+
+    <!-- anime.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+</head>
+
+<body>
+    
+    <h1 id="header">People's Happiness Around the World</h1>
+    <br>
+    <nav>
+        <ul>
+          <li><a href="http://127.0.0.1:5000/happiness">Leaflet: World Happiness Map</a></li>
+          <li><a href="http://127.0.0.1:5000/bubble">Plotly: Visualizations</a></li>
+        </ul>
+      </nav>
+
+    <br>
+    <img src="{{ url_for('static', filename='images/earth.jpeg') }}" alt="Image">
+
+    <!-- anime.js Animation For The Header -->
+    <script>
+        anime({
+        targets: '#header',
+        translateX: [-100, 0],
+        opacity: [0, 1],
+        color: ['#29e842', '#ffffff'],
+        easing: 'easeOutExpo',
+        duration: 5000,
+        delay: 500
+        });
+    </script>
+
+</body>
+</html>
+

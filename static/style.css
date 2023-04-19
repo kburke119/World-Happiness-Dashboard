@@ -1,0 +1,95 @@
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5em;
+  margin: 0;
+  color:#ffffff;
+}
+
+ul {
+  list-style: none; /* Remove the bullet points */
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #000000;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  background-color: #fff;
+  color: #29e842;
+  border: 1px solid #29e842;
+}
+
+/* Additional styles for the list */
+ul {
+  display: flex; /* Use flexbox to align the list horizontally */
+  justify-content: center;
+}
+
+li + li {
+  margin-left: 20px; /* Add a margin to separate the links */
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+#map,
+body,
+html {
+  height: 100%;
+}
+
+#bubble_chart {
+  margin: 0 auto; /* set left and right margins to "auto" */
+  display: block; /* display as a block element */
+}
+
+#scatter_plot {
+  margin: 0 auto; /* set left and right margins to "auto" */
+  display: block; /* display as a block element */
+}
+
+.legend {
+  padding: 10px;
+  line-height: 15px;
+  color: #555;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.legend i {
+  float: left;
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  opacity: 0.7;
+}
+  
+  .leaflet-bottom.leaflet-left {
+    width:90%;
+  }
+  
+  .leaflet-control-container .leaflet-timeline-controls {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    margin-bottom: 15px;
+  }

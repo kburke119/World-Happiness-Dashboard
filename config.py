@@ -1,0 +1,5 @@
+username = "postgres"
+password = "postgres"
+hostname = "localhost"
+port = "5432"
+db = "project_3"
